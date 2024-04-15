@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > div {
+    margin-left: 12px;
+  }
+
+  .title {
+    margin-block: 0;
+  }
+}

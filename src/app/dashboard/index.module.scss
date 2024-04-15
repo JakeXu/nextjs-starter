@@ -1,0 +1,25 @@
+.dashboardWrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  :global {
+    .ant-typography-secondary {
+      margin-bottom: 40px;
+    }
+  }
+
+  .h3 {
+    margin-bottom: 5px;
+    margin-top: 80px;
+  }
+
+  .footer,
+  .footerLabel {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 100px;
+  }
+}

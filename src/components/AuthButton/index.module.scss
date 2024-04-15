@@ -1,0 +1,36 @@
+.authButton {
+  background: $secondary-surface-color;
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $border-color;
+  cursor: pointer;
+  border-radius: $border-radius;
+  margin: 10px 0;
+  transition: opacity 0.5s;
+
+  .icon {
+    margin-right: 8px;
+    margin-bottom: 2px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.authButtonGoogle {
+  @extend .authButton;
+}
+
+.authButtonGithub {
+  @extend .authButton;
+  background: $github-primary-color;
+  color: $font-color-light;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
