@@ -7,7 +7,6 @@ import { Watermark } from 'antd'
 import AntdConfigProvider from '@providers/AntdConfigProvider'
 import AuthSessionProvider from '@providers/AuthSessionProvider'
 
-import '@styles/variables.scss'
 import '@styles/globals.scss'
 
 const inter = Inter({ subsets: ['latin'] })
