@@ -38,6 +38,7 @@ export default function TodosCard({ tasks, setTasks, setModalOpen, isLoading }: 
       {isComplete ? <UndoOutlined /> : <FileDoneOutlined />}
     </Button>,
     <Popconfirm
+      key="delete"
       title="Delete the task"
       description="Are you sure to delete this task?"
       onConfirm={() => deleteTodo(_id)}
@@ -68,10 +69,10 @@ export default function TodosCard({ tasks, setTasks, setModalOpen, isLoading }: 
           loadMore={null}
           dataSource={tasks}
           renderItem={(task: Task) => {
-            const { name, description, isComplete } = task
+            const { _id, name, description, isComplete } = task
             const actions = getListItemActions(task)
             return (
-              <List.Item actions={actions}>
+              <List.Item key={_id} actions={actions}>
                 <Skeleton title={false} loading={isLoading} active>
                   <List.Item.Meta
                     title={<Text delete={isComplete}>{name}</Text>}
