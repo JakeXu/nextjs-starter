@@ -19,6 +19,10 @@ const nextConfig = {
         pathname: '**'
       }
     ]
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, './styles')],
+    prependData: '@use "@styles/variables.scss" as *;\n\r'
   }
 }
 
