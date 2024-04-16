@@ -22,9 +22,7 @@ const nextConfig = {
   },
   sassOptions: {
     includePaths: [path.join(__dirname, './styles')],
-    additionalData: `
-        @use "@styles/variables.scss" as *;
-        `
+    prependData: `@import "@styles/variables.scss";`
   }
 }
 

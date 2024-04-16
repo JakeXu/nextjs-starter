@@ -1,6 +1,6 @@
 import { Card, Progress } from 'antd'
 
-import Colors from '@styles/variables.scss'
+import Colors from '@styles/variables.module.scss'
 
 type Props = {
   tasks: Task[]

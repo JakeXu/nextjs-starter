@@ -1,5 +1,5 @@
 import { ConfigProvider } from 'antd'
-import Colors from '@styles/variables.scss'
+import Colors from '@styles/variables.module.scss'
 
 type Props = {
   children: React.ReactNode
